@@ -642,7 +642,6 @@ layer(base.normalize);
     height: 100%;
     object-fit: cover;
     transition: transform 400ms ease-out;
-    max-height: 400px;
 }
 
 .gallery-image:hover {
