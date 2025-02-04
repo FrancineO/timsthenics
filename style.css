@@ -18,7 +18,7 @@ layer(base.normalize);
         --surface-4: oklch(0.45 0 0);
         --text-1: oklch(1 0 0);
         --text-2: oklch(0.51 0 0);
-        --brand-1: oklch(0.65 0.24 18.89);
+        --brand-1: oklch(45.29% 0 27);
         --brand-2: oklch(0.78 0.11 84.63);
 
         --container: 1600px;
@@ -436,7 +436,7 @@ layer(base.normalize);
         }
 
         .about {
-            background-color: hsl(349 100% 58%);
+            background-color: grey;
             animation: to-black linear both;
             animation-timeline: view();
             animation-range-start: 4%;
@@ -453,7 +453,7 @@ layer(base.normalize);
         /* Avoiding custom properties to ensure the animation remains on the compositor for optimal performance. */
         @keyframes to-brand {
             to {
-                background-color: hsl(349 100% 58%);
+                background-color: grey;
             }
         }
 
@@ -564,7 +564,7 @@ layer(base.normalize);
 
             30%,
             70% {
-                color: hsl(349 100% 58%);
+                color: grey;
             }
         }
     }

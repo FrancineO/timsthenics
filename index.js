@@ -93,13 +93,13 @@ const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
 if (mediaQuery.matches) rate = REDUCED_PLAYBACK_RATE;
 
 const words = [
-  "passion",
+  "handstand",
   "success",
   "goals",
-  "rhythm",
+  "calisthenics",
   "fun",
   "energy",
-  "opportunity",
+  "strength",
 ];
 
 textReplace(words, "target-word", rate);
