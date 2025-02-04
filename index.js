@@ -1,42 +1,7 @@
-const openMenuBtn = document.querySelector("#openMenuBtn");
-const closeMenuBtn = document.querySelector("#closeMenuBtn");
-const menu = document.querySelector("#menu");
-
-openMenuBtn.addEventListener("click", () => {
-  handleViewTransition(openMenu);
-});
-
-closeMenuBtn.addEventListener("click", () => {
-  handleViewTransition(closeMenu);
-});
-
-// Close menu by Press Escape(ESC)
-function handleCloseWithESC(e) {
-  if (e.key == "Escape") {
-    handleViewTransition(closeMenu);
-  }
-}
-
-function openMenu() {
-  menu.classList.add("open");
-  closeMenuBtn.focus();
-  window.addEventListener("keyup", handleCloseWithESC);
-}
-
-function closeMenu() {
-  menu.classList.remove("open");
-  openMenuBtn.focus();
-  window.removeEventListener("keyup", handleCloseWithESC);
-}
-
 function handleViewTransition(updateDom) {
   if (!document.startViewTransition) updateDom();
   else document.startViewTransition(() => updateDom());
 }
-
-document.querySelectorAll(".NavLink").forEach((link) => {
-  link.addEventListener("click", () => handleViewTransition(closeMenu));
-});
 
 //  Scroll Animation
 

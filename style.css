@@ -22,7 +22,7 @@ layer(base.normalize);
         --brand-2: oklch(0.78 0.11 84.63);
 
         --container: 1600px;
-        --nav-block-size: 6.2rem;
+        --nav-block-size: 4rem;
 
 
         --gap: var(--size-8);
@@ -60,50 +60,6 @@ layer(base.normalize);
             align-items: center;
             justify-content: space-between;
             padding-inline: var(--size-3);
-        }
-
-        @media (width > 768px) {
-            #openMenuBtn {
-                display: none;
-            }
-        }
-
-        .menu {
-            list-style: none;
-            display: flex;
-            background-color: var(--surface-1);
-
-            >header {
-                display: flex;
-                justify-content: space-between;
-                inline-size: 100%;
-                padding-inline: var(--size-3);
-                border-bottom: var(--border-size-2) solid var(--text-1);
-            }
-
-            @media (width < 768px) {
-                flex-direction: column;
-                align-items: start;
-                position: fixed;
-                inset-block: 0;
-                inset-inline-end: 0;
-                inline-size: 100%;
-                gap: var(--size-7);
-
-                display: none;
-
-                &.open {
-                    display: flex;
-                }
-            }
-
-            @media (width >=768px) {
-                gap: var(--gap);
-
-                >header {
-                    display: none;
-                }
-            }
         }
     }
 
@@ -393,9 +349,9 @@ layer(base.normalize);
     .Logo {
         font-family: 'Bebas Neue', sans-serif;
         font-weight: var(--font-weight-9);
-
-        font-size: 4.5rem;
-        font-size: calc(var(--font-size-8) + var(--font-size-1));
+        font-size: 2.5rem;
+        width: 100%;
+        text-align: center;
     }
 
     .NavButton {
