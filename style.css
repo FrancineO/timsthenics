@@ -634,6 +634,8 @@ layer(base.normalize);
     margin: 1rem;
     box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
     overflow: hidden;
+    width:100%;
+    height: 16rem;
 }
 
 .gallery-image {
