@@ -617,7 +617,6 @@ layer(base.normalize);
 }
 
 #plans {
-    max-width: 100rem;
     padding: 2rem;
 }
 
